@@ -1,0 +1,26 @@
+{
+  "name": "app-service",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:insights": "node --require ./load-appinsights.js node_modules/next/dist/bin/next dev -p $PORT",
+    "start": "next start",
+    "start:insights": "node --require ./load-appinsights.js node_modules/next/dist/bin/next start -p $PORT",
+    "build": "next build",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@microsoft/applicationinsights-react-js": "^3.4.1",
+    "@microsoft/applicationinsights-web": "^2.8.11",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.3"
+  }
+}

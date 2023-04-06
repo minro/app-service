@@ -3,12 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   output: "standalone",
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**.azurestaticapps.net",
-      }
-    ]
+    loader: "custom",
+    loaderFile: "./utils/image/loader.ts",
   }
 }
 

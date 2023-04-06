@@ -4,6 +4,9 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react'
 import sqli_local from '../assets/sqli_local.jpg'
+import next from '../assets/next.svg'
+import vercel from '../assets/vercel.svg'
+import thirteen from '../assets/thirteen.svg'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,7 +49,7 @@ export default function Home({ data }: { data: string }) {
             >
               By{' '}
               <Image
-                src="/vercel.svg"
+                src={vercel}
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
@@ -60,7 +63,7 @@ export default function Home({ data }: { data: string }) {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/next.svg"
+            src={next}
             alt="Next.js Logo"
             width={180}
             height={37}
@@ -68,7 +71,7 @@ export default function Home({ data }: { data: string }) {
           />
           <div className={styles.thirteen}>
             <Image
-              src="/thirteen.svg"
+              src={thirteen}
               alt="13"
               width={40}
               height={31}

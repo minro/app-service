@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react'
+import sqli_local from "assets/sqli_local.png"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -74,6 +75,9 @@ export default function Home({ data }: { data: string }) {
               priority
             />
           </div>
+        </div>
+        <div className={styles.center}>
+          <Image src={sqli_local} alt="sqli_local" priority />
         </div>
 
         <div className={styles.grid}>

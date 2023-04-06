@@ -6,10 +6,12 @@ import {
   AppInsightsContext,
 } from "@microsoft/applicationinsights-react-js";
 
+console.log(process.env.NEXT_PUBLIC_APP_INSIGHTS)
+
 let reactPlugin = new ReactPlugin();
 let appInsights = new ApplicationInsights({
   config: {
-    connectionString: process.env.NEXT_PUBLIC_APP_INSIGHT,
+    connectionString: process.env.NEXT_PUBLIC_APP_INSIGHTS,
     enableAutoRouteTracking: true,
     enableCorsCorrelation: true,
     enableRequestHeaderTracking: true,
